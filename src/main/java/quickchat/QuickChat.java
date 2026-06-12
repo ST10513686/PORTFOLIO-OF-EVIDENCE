@@ -33,6 +33,7 @@ public class QuickChat {
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a whole number.");
             }
+            
         }
 
         int messagesSentThisSession = 0;
