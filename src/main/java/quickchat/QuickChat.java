@@ -7,7 +7,7 @@ package quickchat;
  *
  * @author Ntatiso
  */
-
+ 
 import java.util.Scanner;
 
 public class QuickChat {
@@ -22,9 +22,7 @@ public class QuickChat {
             scanner.close();
             return;
         }
-
-        System.out.println("");
-
+        
         int numMessages = 0;
         while (true) {
             System.out.print("How many messages would you like to send this session? ");
@@ -45,6 +43,7 @@ public class QuickChat {
             System.out.println("1) Send Messages");
             System.out.println("2) Show recently sent messages");
             System.out.println("3) Quit");
+            System.out.println("4) Stored Messages");
             System.out.print("Choose an option: ");
 
             String input = scanner.nextLine().trim();
@@ -64,8 +63,11 @@ public class QuickChat {
                 case "3":
                     running = false;
                     break;
+                case "4":
+                    Message.displayStoredMessagesMenu(scanner);
+                    break;
                 default:
-                    System.out.println("Invalid option. Please choose 1, 2, or 3.");
+                    System.out.println("Invalid option. Please choose 1, 2, 3 or 4.");
             }
         }
 
