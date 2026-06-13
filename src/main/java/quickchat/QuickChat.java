@@ -23,7 +23,6 @@ public class QuickChat {
             return;
         }
         
-
         int numMessages = 0;
         while (true) {
             System.out.print("How many messages would you like to send this session? ");
