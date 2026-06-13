@@ -84,7 +84,6 @@ public class MessageTest {
             Message m = new Message(ids[i], 0, RECIPIENT_1, texts[i]);
             assertEquals(expected[i], m.createMessageHash());
         }
-        
     }
 
     @Test
