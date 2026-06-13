@@ -22,6 +22,7 @@ public class QuickChat {
             scanner.close();
             return;
         }
+        
 
         int numMessages = 0;
         while (true) {
